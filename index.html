@@ -1,39 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fareha Writes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fareha Writes | Creative Writing Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fffaf7;
+        }
+
+        header {
+            background: #5b2c6f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #3d1f4d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #f3e5f5;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            color: #5b2c6f;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #5b2c6f;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #5b2c6f;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #5b2c6f;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 750px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #f3e5f5;
+            max-width: none;
+        }
+
+        footer {
+            background: #3d1f4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Fareha Writes</h1>
+<header>
+    <h1>Fareha Writes</h1>
+    <p>Creative Content & Writing Services</p>
+</header>
 
-<h2>Creative Content & Writing Services</h2>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<p>
-Welcome to Fareha Writes. I create engaging, clear and creative
-content for businesses, websites and individuals.
-</p>
+<section class="hero" id="home">
+    <h2>Words That Connect. Stories That Matter.</h2>
 
-<h2>My Services</h2>
+    <p>
+        I create engaging, clear and creative content for
+        businesses, websites and individuals.
+    </p>
 
-<ul>
-    <li>Article Writing</li>
-    <li>Blog Writing</li>
-    <li>Website Content</li>
-    <li>Creative Writing</li>
-    <li>Story Writing</li>
-</ul>
+    <a href="#contact" class="button">Hire Me</a>
+</section>
 
-<h2>About Me</h2>
+<section id="about">
+    <h2>About Me</h2>
 
-<p>
-I'm Fareha, a passionate writer who enjoys turning ideas into
-useful, engaging and meaningful content.
-</p>
+    <div class="about">
+        <p>
+            Hi! I'm Fareha, a passionate writer who enjoys turning
+            ideas into useful, engaging and meaningful content.
+            I focus on creating content that is clear, reader-friendly
+            and suitable for your audience.
+        </p>
+    </div>
+</section>
 
-<h2>Contact</h2>
+<section id="services">
+    <h2>My Services</h2>
 
-<p>Email: your-email@example.com</p>
+    <div class="services">
+
+        <div class="card">
+            <h3>Article Writing</h3>
+            <p>Informative and engaging articles for different audiences.</p>
+        </div>
+
+        <div class="card">
+            <h3>Blog Writing</h3>
+            <p>Interesting blog posts designed to inform and engage readers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Content</h3>
+            <p>Clear and professional content for websites and businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creative Writing</h3>
+            <p>Creative and original writing that brings ideas to life.</p>
+        </div>
+
+        <div class="card">
+            <h3>Story Writing</h3>
+            <p>Original stories with engaging characters and ideas.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Let's Work Together</h2>
+
+    <p>
+        Have a project in mind? I'd love to hear from you.
+    </p>
+
+    <a href="mailto:your-email@example.com" class="button">
+        Contact Me
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Fareha Writes. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
